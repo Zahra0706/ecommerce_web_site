@@ -33,6 +33,7 @@ if ($result_user->num_rows > 0) {
     exit();
 }
 
+
 // Récupérez l'historique des achats de l'utilisateur
 $sql_purchase_history = "SELECT c.commande_id, c.date_commande, d.product_id, p.product_name, p.cheminImage, d.quantite
     FROM commande c
